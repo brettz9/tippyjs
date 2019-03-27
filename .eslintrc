@@ -7,15 +7,32 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/@typescript-eslint"
   ],
+  "settings": {
+    "react": {
+      "version": "16.8.1"
+    }
+  },
   "plugins": ["@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "overrides": [{
+    "files": ["website/**"],
+    "rules": {
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-use-before-define": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "react/prop-types": "off",
+      "react/no-unescaped-entities": "off"
+    }
+  }],
   "rules": {
     "@typescript-eslint/no-use-before-define": [
       "error",
@@ -23,6 +40,6 @@
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/array-type": ["off"]
+    "@typescript-eslint/array-type": "off"
   }
 }

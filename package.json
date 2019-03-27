@@ -7,7 +7,13 @@
   "unpkg": "./umd/index.all.min.js",
   "types": "index.d.ts",
   "author": "atomiks",
+  "contributors": [
+    "Brett Zamir"
+  ],
   "license": "MIT",
+  "bugs": "https://github.com/atomiks/tippyjs/issues",
+  "homepage": "https://atomiks.github.io/tippyjs/",
+  "engines": {},
   "keywords": [
     "tooltip",
     "popover",
@@ -31,7 +37,7 @@
     "test": "jest --coverage",
     "test:browser": "parcel test/browser/index.html -d .devserver --open",
     "check-types": "tsc",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint --report-unused-disable-directives .",
     "clean": "rimraf umd esm themes coverage .devserver .cache ./index.css",
     "prepare": "npm run clean && npm run build"
   },
@@ -84,6 +90,7 @@
     "cssnano": "^4.1.10",
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "jest": "^24.0.0",
     "lint-staged": "^8.1.1",
