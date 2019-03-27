@@ -7,7 +7,13 @@
   "unpkg": "./umd/index.all.min.js",
   "types": "index.d.ts",
   "author": "atomiks",
+  "contributors": [
+    "Brett Zamir"
+  ],
   "license": "MIT",
+  "bugs": "https://github.com/atomiks/tippyjs/issues",
+  "homepage": "https://atomiks.github.io/tippyjs/",
+  "engines": {},
   "keywords": [
     "tooltip",
     "popover",
@@ -27,7 +33,7 @@
   },
   "scripts": {
     "dev": "parcel demo/index.html -d .devserver --open",
-    "build": "node rollup.build.js && bundlesize",
+    "build": "npx babel-node rollup.build.js && bundlesize",
     "test": "jest --coverage",
     "test:browser": "parcel test/browser/index.html -d .devserver --open",
     "check-types": "tsc",
@@ -72,6 +78,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-typescript": "^7.3.3",

@@ -1,17 +1,18 @@
-const fs = require('fs')
-const pkg = require('./package.json')
-const { rollup } = require('rollup')
-const babel = require('rollup-plugin-babel')
-const { terser } = require('rollup-plugin-terser')
-const sass = require('rollup-plugin-sass')
-const postcss = require('postcss')
-const autoprefixer = require('autoprefixer')
-const cssnano = require('cssnano')
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
-const json = require('rollup-plugin-json')
-const cssOnly = require('rollup-plugin-css-only')
-const { green, blue } = require('colorette')
+/* eslint-disable no-console */
+import fs from 'fs'
+import pkg from './package.json'
+import { rollup } from 'rollup'
+import babel from 'rollup-plugin-babel'
+import { terser } from 'rollup-plugin-terser'
+import sass from 'rollup-plugin-sass'
+import postcss from 'postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import resolve from 'rollup-plugin-node-resolve'
+// import commonjs from 'rollup-plugin-commonjs'
+import json from 'rollup-plugin-json'
+import cssOnly from 'rollup-plugin-css-only'
+import { green, blue } from 'colorette'
 
 const BANNER = `/**!
 * tippy.js v${pkg.version}
