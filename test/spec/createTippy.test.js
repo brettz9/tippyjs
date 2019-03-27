@@ -180,7 +180,7 @@ describe('instance.hide', () => {
     instance.destroy()
   })
 
-  it('removes the popper element from the DOM after hiding', () => {
+  it('removes the popper element from the DOM after hiding', done => {
     const instance = createTippy(h(), {
       ...defaultProps,
     })

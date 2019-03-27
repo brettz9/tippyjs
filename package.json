@@ -7,7 +7,13 @@
   "unpkg": "./umd/index.all.min.js",
   "types": "index.d.ts",
   "author": "atomiks",
+  "contributors": [
+    "Brett Zamir"
+  ],
   "license": "MIT",
+  "bugs": "https://github.com/atomiks/tippyjs/issues",
+  "homepage": "https://atomiks.github.io/tippyjs/",
+  "engines": {},
   "keywords": [
     "tooltip",
     "popover",
